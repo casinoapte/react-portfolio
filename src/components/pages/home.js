@@ -5,8 +5,6 @@ import coolPics from "../../assets/me_and_whale_2.JPG"
 export default function Home() {
 
 
-
-
     return (
         <div className="container">
 
@@ -20,10 +18,10 @@ export default function Home() {
 
             <div className="row">
                 <div className="col-3">
-                    <img src={projectsImg} alt="sudoku" />
+                    <a href="/projects"><img src={projectsImg} alt="sudoku"/></a>
                 </div>
                 <div className="col-3 offset-3">
-                    <img src={coolPics} alt="sudoku" />
+                <a href="/pictures"><img src={coolPics} alt="picture"/></a>
                 </div>
             </div>
 

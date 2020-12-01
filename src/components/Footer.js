@@ -6,29 +6,33 @@ function Footer() {
     const location = useLocation();
 
     return (
-        <div>
-            <ul className="nav">
-                <li className="Home-nav">
-                    <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-                        Home
+        <div className="row">
+            <div className="col-12">
+
+
+                <ul className="footer">
+                    <li className="footer">
+                        <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+                            Home
                     </Link>
-                </li>
-                <li className="Home-nav">
-                    <Link to="/projects" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-                        Projects
+                    </li>
+                    <li className="footer">
+                        <Link to="/projects" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+                            Projects
                     </Link>
-                </li>
-                <li className="Home-nav">
-                    <Link to="/pictures" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-                        Pictures
+                    </li>
+                    <li className="footer">
+                        <Link to="/pictures" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+                            Pictures
                     </Link>
-                </li>
-                <li className="Home-nav">
-                    <Link to="/contact" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-                        Contact
+                    </li>
+                    <li className="footer">
+                        <Link to="/contact" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+                            Contact
                     </Link>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }
